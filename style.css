@@ -24,9 +24,10 @@ body {
 }
 .container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   border-radius: 10px;
   overflow: hidden;
-  /* width: 600px; */
 }
 .card-img img {
   width: 100%;
