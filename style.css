@@ -23,11 +23,13 @@ body {
   margin-bottom: 30px;
 }
 .container {
+  border: 2px solid red;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   border-radius: 10px;
   overflow: hidden;
+  /* width: 600px; */
 }
 .card-img img {
   width: 100%;
@@ -39,8 +41,10 @@ body {
 }
 .card-info {
   background-color: #fff;
-  height: 500px;
-  padding: 30px;
+  height: auto;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .add_cart {
   width: 80%;
@@ -84,4 +88,17 @@ body {
   letter-spacing: 5px;
   text-transform: uppercase;
   font-size: small;
+}
+
+@media screen and (orientation: portrait) {
+  .container {
+    display: block;
+    overflow: hidden;
+    /* margin-top: 50px; */
+
+    /* margin-bottom: -50px; */
+  }
+  body {
+    margin-bottom: 30px;
+  }
 }
